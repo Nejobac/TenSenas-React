@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import {HomePage } from "./pages";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App=()=>{
+    return(
+        /* Desde el navegador */
+        <BrowserRouter>
+        {/* vamos a tener distinas rutas */}
+            <Routes>
+                {/* Especificamos cada ruta */}
+                <Route path="/" element={<HomePage/>}/>
+            </Routes>
+        </BrowserRouter>
+    )
 }
-
+/* si deseo exportar más de un componente trengo que quitar el default y poner los componentes entre llaves{} */
 export default App;
