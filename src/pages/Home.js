@@ -1,5 +1,11 @@
 import React from "react";
-import {OtherNavBar,NavBarComponent,HomeComponent,PlanComponent} from "../components";
+import "./home.css";
+import {OtherNavBar
+    ,HomeComponent,PlanComponent,
+    NosotrosComponent,EquipoComponent,
+    AccesoComponent,ProblematicaComponent,
+    AprendeComponent
+} from "../components";
 const HomePage = () =>{
     return(
         <div class="container-fluid">
@@ -9,14 +15,15 @@ const HomePage = () =>{
             <br></br>
             <PlanComponent/>
             </div>
-            <div class="row">
+                    <NosotrosComponent/>
+            <div class="row container">
                 <div class="col">
-                    <PlanComponent/>
-                    <PlanComponent/>
+                    <EquipoComponent/>
+                    <ProblematicaComponent/>
                 </div>
-            <div class="col">
-                    <PlanComponent/>
-                    <PlanComponent/>         
+                <div class="col">
+                    <AccesoComponent/>
+                    <AprendeComponent/>         
                 </div>
             </div>
         </div>

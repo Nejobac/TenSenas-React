@@ -13,9 +13,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { color } from "@mui/system";
+import "./barra.css"
 
-const drawerWidth = 240;
 const navItems = ["Inicio", "Sobre Nosotros", "Contactanos"];
 
 function DrawerAppBar(props) {
@@ -28,9 +27,7 @@ function DrawerAppBar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-            <Typography variant="h6" sx={{ my: 2 }}>    
-            <button type="button" class="btn btn-light">
-            </button>
+            <Typography variant="h6" sx={{ my: 2 }}> 
             </Typography>
             <Divider />
             <List>
@@ -50,7 +47,7 @@ function DrawerAppBar(props) {
 
     return (
         <Box sx={{ display: "flex" }}>
-            <AppBar  component="nav">
+            <AppBar  component="nav"className="barra">
                 <Toolbar>
                     <IconButton
                         color="inherit"
@@ -58,7 +55,7 @@ function DrawerAppBar(props) {
                         edge="start"
                         onClick={handleDrawerToggle}
                         sx={{ mr: 2, display: { sm: "none" } }}
-                    >
+                    >|
                         { }
                         <MenuIcon />
                     </IconButton>
@@ -93,8 +90,7 @@ function DrawerAppBar(props) {
                     sx={{
                         display: { xs: "block", sm: "none" },
                         "& .MuiDrawer-paper": {
-                            boxSizing: "border-box",
-                            width: drawerWidth,
+                            boxSizing: "border-box"
                         },
                     }}
                 >

@@ -1,12 +1,12 @@
 import React from "react";
-const HomeComponent = () => {
+/* import "./Home.css"
+ */const HomeComponent = () => {
   return (
-    <div align-center>
+    <div className="cuerpologin">
       <div
         class="card text-center border-info" /*  style={{ width: "80rem" }} */
       >
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
           <a href="#" class="btn btn-light border-info">
             Iniciar Sesión
           </a>{" "}

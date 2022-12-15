@@ -1,0 +1,20 @@
+.planAprendizaje {
+    background: rgba(37, 162, 213, 255);
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 370px;
+    margin-bottom: 50px;
+  
+    box-sizing: border-box;
+  
+    width: 78%;
+    height: 310px;
+  
+    border: 1px solid #25a2d5;
+    border-radius: 20px;
+  
+    line-height: 29px;
+  
+    position: relative;
+    left: 10%;
+  }
